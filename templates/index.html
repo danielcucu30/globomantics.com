@@ -1,0 +1,57 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="./home/dcucu/environments/gman310/html5_MVC/css/normalize.css">
+  <link rel="stylesheet" href="./home/dcucu/environments/gman310/html5_MVC/css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+   <div class="header-container">
+    <header class="wrapper clearfix">
+     <h1 class="title">Globomantics CRM v0.00001</h1> 
+    </header>
+   </div>
+   <div class="main-container">
+     <div class="main wrapper clearfix">
+      <article>
+        <header>
+          <form action="" method="post">
+            <article>
+              <p> Enter accoutn ID(e.g ACCT100):<input type="text" name="acctid"></p>
+              <p><button type="submit">Submit</button></p>
+              {% if acct_balance is not none %}
+              <p>Accoutn Balance:{{acct_balance}}</p>
+              {% else %}
+                <p>Unknown Accoutn Numbern Please try again</p>
+              {% endif %}
+            </form>
+            </article>
+          
+        </header>
+      </article>
+     </div> <!-- #main -->
+   </div> <!-- #main-container-->
+ 
+  
+  <!-- Add your site or application content here -->
+</body>
+
+</html>
